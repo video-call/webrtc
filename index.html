@@ -27,7 +27,7 @@
       border-radius: 2px;
       padding: 0;
     }
-    .copy {
+    .title {
       position: fixed;
       top: 25px;
       left: 50%;
@@ -35,7 +35,15 @@
       font-size: 25px;
       color: white;
     }
-    .copy1 {
+    .subtitle {
+      position: fixed;
+      top: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      color: white;
+    }
+    .message1 {
       position: fixed;
       top: 600px;
       left: 50%;
@@ -45,12 +53,14 @@
     }
   </style>
 </head>
-<body>
-  <div class="copy">Welcome!</div>
+
+  
+  <body>
+  <div class="title">Video Conferencing</div>
+  <div class="subtitle">Welcome!</div>
   <video id="localVideo" autoplay muted></video>
   <video id="remoteVideo" autoplay></video>
-  <p class="copy1">Send the URL to a friend to start a video call</p>
-  <p>Copyright &copy; 2020 Gurucharan M K</p>
+  <p class="message1">Send the URL to a friend to start a video call</p>
   <script src="script.js"></script>
 </body>
 </html>
