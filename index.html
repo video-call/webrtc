@@ -32,15 +32,24 @@
       top: 25px;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 18px;
-      color: white;
+      font-size: 25px;
+      color: black;
+    }
+    .copy1 {
+      position: fixed;
+      top: 95px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      color: black;
     }
   </style>
 </head>
 <body>
-  <div class="copy">Welcome! Send the URL to a friend to start a video call</div>
+  <div class="copy">Welcome!</div>
   <video id="localVideo" autoplay muted></video>
   <video id="remoteVideo" autoplay></video>
+  <p class="copy1">Send the URL to a friend to start a video call</p>
   <script src="script.js"></script>
 </body>
 </html>
