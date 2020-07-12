@@ -33,8 +33,6 @@ let interval;
 function gotMediaStream(mediaStream) {
   videoElem.srcObject = mediaStream;
   localStream = mediaStream;
-  dumpOptionsInfo();
-  displayStat();
   logElem.style.display = 'inline-block';
 }
 
@@ -61,31 +59,6 @@ function stopAction() {
   stopButton.disabled = true;
   logElem.innerHTML = '';
   logElem.style.display = 'none';
-  stopDisplayStat();
-}
-
-function dumpOptionsInfo() {
-  const videoTrack = videoElem.srcObject.getVideoTracks()[0];
-  console.info('Track settings:');
-  console.info(JSON.stringify(videoTrack.getSettings(), null, 2));
-  console.info('Track constraints:');
-  console.info(JSON.stringify(videoTrack.getConstraints(), null, 2));
-}
-
-// Display statistics
-function displayStat() {
-  interval = setInterval(() => {
-    if (videoElem.videoWidth) {
-      const width = videoElem.videoWidth;
-      const height = videoElem.videoHeight;
-      videoStat.innerHTML = `<strong>Video dimensions:</strong> ${width}x${height}px`;
-    }
-  }, 3000);
-}
-
-function stopDisplayStat() {
-  clearInterval(interval);
-  videoStat.innerHTML = ``;
 }
 
 startButton.onclick = startAction;
