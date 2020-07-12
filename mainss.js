@@ -1,12 +1,13 @@
 // you will be streaming only video (video: true).
 const DISPLAY_MEDIA_CONSTRAINTS = {
-  video1: {
+  video: {
     cursor: 'always',
   },
   audio: false,
 };
+
 // Video element where stream will be placed.
-const videoElem = document.querySelector('video1');
+const videoElem = document.querySelector('video');
 const videoStat = document.querySelector('#video-stat');
 //buttons
 var startButton = document.querySelector('button#startButton');
