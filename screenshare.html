@@ -16,17 +16,6 @@
       padding: 0 50px;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
-    video {
-      background: white;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      max-width: calc(50% - 5%);
-      margin: 0 5%;
-      box-sizing: border-box;
-      border-radius: 2px;
-      padding: 0;
-    }
     .title {
       position: fixed;
       top: 25px;
@@ -59,16 +48,6 @@
       font-size: 15px;
       color: white;
     }
-    .button1 {
-      position: fixed;
-      top: 450px;
-      left: 50%;
-      display: flex;
-      transform: translateX(-50%);
-      color: white;
-      font-size: 20px;
-      justify-content: space-evenly;
-}
     .video-contianer video {
       width: 50%;
       height: 100%;
@@ -93,11 +72,14 @@
   white-space: pre;
 }
     .buttons {
-  width: 100%;
-  margin-top: 20px;
-  top: 450px;
-  display: flex;
-  justify-content: space-evenly;
+      position: fixed;
+      top: 450px;
+      left: 50%;
+      display: flex;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 20px;
+      justify-content: space-evenly;
 }
 .buttons button {
   padding: 5px;
@@ -121,7 +103,7 @@
       <h3>Logs</h3>
       <pre id="log"></pre>
     </div>
-
+    <h3 class="ssnlogo"><img src="assets/logo-ssn.png"/></h3>
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
     <script src="mainss.js"></script>
   </body>
