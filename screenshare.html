@@ -1,96 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
-  <link rel="stylesheet" href="mainss.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <style>
-    body {
-      background: #00ff84;
-      display: flex;
-      height: 100vh;
-      margin: 0;
-      align-items: center;
-      justify-content: center;
-      padding: 0 50px;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-    .title {
-      position: fixed;
-      top: 25px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 30px;
-      color: white;
-    }
-    .subtitle {
-      position: fixed;
-      top: 90px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 20px;
-      color: white;
-    }
-    .message1 {
-      position: fixed;
-      top: 600px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 10px;
-      color: white;
-    }
-    .ssnlogo {
-      position: fixed;
-      top: 600px;
-      left: 98%;
-      transform: translateX(-50%);
-      font-size: 15px;
-      color: white;
-    }
-    .video-contianer video {
-      width: 50%;
-      height: 100%;
-}
-    .log-container {
-      position: fixed;
-      top: 600px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 10px;
-      color: white;
-}
-.log-container pre {
-  text-align: left;
-  background-color: #eee;
-  display: none;
-  font-family: 'Inconsolata', 'Courier New', monospace;
-  font-size: 0.9em;
-  padding: 10px 10px 10px 25px;
-  position: relative;
-  top: 10px;
-  white-space: pre;
-}
-    .buttons {
-      position: fixed;
-      top: 450px;
-      left: 50%;
-      display: flex;
-      transform: translateX(-50%);
-      color: white;
-      font-size: 20px;
-      justify-content: space-evenly;
-}
-.buttons button {
-  padding: 5px;
-}
-    
-  </style>
-</head>
+  <head>
+    <title>Screen Sharing with WebRTC</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
 
   <body>
-    <div class="title">Screen Sharing</div>
-    <div class="subtitle">Welcome!</div>
+    <div class="header">
+      <h1>Screen Sharing with WebRTC</h1>
+    </div>
     <div class="video-contianer">
       <video id="video" autoplay muted playsinline></video>
       <div id="video-stat"></div>
@@ -103,8 +21,8 @@
       <h3>Logs</h3>
       <pre id="log"></pre>
     </div>
-    <h3 class="ssnlogo"><img src="assets/logo-ssn.png"/></h3>
+
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-    <script src="mainss.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
