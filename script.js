@@ -118,8 +118,12 @@ function localDescCreated(desc) {
 // you will be streaming only video (video: true).
 const DISPLAY_MEDIA_CONSTRAINTS = {
   video1: {
-    cursor: 'always',
-  },
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  height: 300px;
+},
   audio: false,
 };
 // Video element where stream will be placed.
