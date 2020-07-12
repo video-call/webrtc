@@ -1,8 +1,10 @@
 .header {
-  width: 100%;
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center;
+      position: fixed;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 30px;
+      color: white;
 }
 .video-contianer {
   width: 100%;
@@ -25,12 +27,12 @@
   padding: 5px;
 }
 .log-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+      position: fixed;
+      top: 600px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      color: white;
 }
 .log-container pre {
   text-align: left;
