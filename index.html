@@ -60,6 +60,16 @@
       font-size: 15px;
       color: white;
     }
+    .buttons {
+      position: fixed;
+      top: 450px;
+      left: 50%;
+      display: flex;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 10px;
+      justify-content: space-evenly;
+}
   </style>
 </head>
 
@@ -69,7 +79,7 @@
   <div class="subtitle">Welcome!</div>
   <video id="localVideo" autoplay muted></video>
   <video id="remoteVideo" autoplay></video>
-  <a href="#" class="buttons">Download Resume</a>
+  <a href="https://video-call.github.io/webrtc/screenshare.html" class="button1">Screen Share</a>
   <p class="message1">Send the URL to a friend to start a video call</p>
   <h3 class="ssnlogo"><img src="assets/logo-ssn.png"/></h3>
   <script src="script.js"></script>
