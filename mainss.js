@@ -1,18 +1,3 @@
-// Generate random room name if needed
-if (!location.hash) {
-  location.hash = Math.floor(Math.random() * 0xFFFFFF).toString(16);
-}
-const roomHash = location.hash.substring(1);
-
-// TODO: Replace with your own channel ID
-const drone = new ScaleDrone('8rOcta9v4zs5FvWm');
-// Room name needs to be prefixed with 'observable-'
-const roomName = 'observable-' + roomHash;
-const configuration = {
-  iceServers: [{
-    urls: 'stun:stun.l.google.com:19302'
-  }]
-};
 // you will be streaming only video (video: true).
 const DISPLAY_MEDIA_CONSTRAINTS = {
   video1: {
