@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <style>
     body {
-      background: #00ff84;
+      background: #0a0a0a;
       display: flex;
       height: 100vh;
       margin: 0;
@@ -69,6 +69,14 @@
       font-size: 20px;
       justify-content: space-evenly;
 }
+    button {
+      position: fixed;
+      top: 610px;
+      left: 62%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      color: black;
+    }
   </style>
 </head>
 
@@ -79,7 +87,13 @@
   <video id="localVideo" autoplay muted></video>
   <video id="remoteVideo" autoplay></video>
   <a href="https://video-call.github.io/webrtc-screenshare/" class="button1">Screen Share</a>
-  <p class="message1">Send the URL to a friend to start a video call</p>
+  <script>
+    function getURL() {
+        alert("Send to Friend: " + window.location.href);
+    }
+   </script>
+   <button type="button" onclick="getURL();">Click Me!</button>
+  <p class="message1">Note: Send the URL to a friend to start a video call</p>
   <h3 class="ssnlogo"><img src="assets/logo-ssn.png"/></h3>
   <script src="script.js"></script>
 </body>
